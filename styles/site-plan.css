@@ -16,8 +16,11 @@ Fonts are separated by a | */
     /*--accent2-color: white;*/
 
     /* change the values below to your chosen font(s) */
-    --heading-font: "IM Fell French Canon SC";
-    --paragraph-font: Lato, Helvetica, sans-serif;
+    --heading-font: "Gloock";
+    --paragraph-font: SemiBold 600, Times, slab-serif;
+
+    /*--heading-font: "IM Fell French Canon SC";*/
+    /*--paragraph-font: Lato, Helvetica, sans-serif;*/
 
     /* these colors below should be chosen from among your palette colors above */
     --headline-color-on-white: #1a2737;  /* headlines on a white background */
