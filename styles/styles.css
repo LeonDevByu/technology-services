@@ -1,0 +1,48 @@
+
+.page01_01{
+    display:block;
+    width: 400px;
+    height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page01_02{
+    display:block;
+    width: 400px;
+    height: 280px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page02_01{
+    display:block;
+    width: 400px;
+    height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page02_02{
+    display:block;
+    width: 400px;
+    height: 280px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.page03_01{
+    display:block;
+    width: 400px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page03_02{
+    display:block;
+    width: 400px;
+    height: 280px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
