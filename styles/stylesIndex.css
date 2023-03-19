@@ -355,6 +355,12 @@ footer p {
 }
 
 @media screen and (max-width: 500px) {
+
+    header a img {
+        max-width: 100px;
+        min-height: 40px;
+    }
+
     footer {
         background-color: #4a4d4c;
         padding: 25px 50px;
