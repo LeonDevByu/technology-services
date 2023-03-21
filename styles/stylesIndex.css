@@ -4,18 +4,6 @@
     box-sizing: border-box;
 }
 
-/*#content {*/
-/*    margin: 0 auto;*/
-/*    max-width: 1600px;*/
-/*}*/
-
-/*:root{*/
-/*    scroll-behavior: smooth;*/
-/*}*/
-
-/*body{*/
-/*    font-family: 'Open Sans', sans-serif;*/
-/*}*/
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -92,7 +80,6 @@ nav a:hover {
 
 nav a {
     color: #5cc8c0;
-    /*color: rgb(255, 255, 255);*/
     text-decoration: none;
     padding: 10px;
 }
@@ -125,7 +112,6 @@ nav a {
 
 .number {
     display: inline-block;
-    /* 02 */
     background-image: linear-gradient(to top, #498686 0%, #3176b9 100%);
     line-height: 30px;
     text-align: center;
