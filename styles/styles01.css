@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 2px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -58,14 +58,13 @@ header {
     display: grid;
     grid-template-columns: 250px auto;
     background-color: rgba(27, 28, 27, 0.7);
-    /*margin: 1px;*/
+    /*margin: 0 auto;*/
     width: 100%;
 }
 
 header a img {
     max-width: 250px;
     min-height: 110px;
-    align-self: self-end;
 }
 
 nav {
@@ -87,24 +86,36 @@ nav a {
 
 /*=================================================================*/
 
-.container-service {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-
+.container-service001 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
 }
 
-/*.container-service img {*/
-/*    width: 40%;*/
-/*}*/
-
-.container001 .image001 {
-    width: 80%;
+.checklist-service01{
+    grid-column : 1/2;
+    grid-row: 1/3;
 }
 
-.checklist-service {
-    width: 45%;
+.checklist-service02{
+    grid-column : 2/3;
+    grid-row: 1/2;
+}
+
+.checklist-service03{
+    grid-column : 2/3;
+    grid-row: 2/3;
+}
+
+h2 {
+    color: crimson;
+    text-align: center;
+}
+
+
+.checklist-service01 {
+    width: 100%;
 }
 
 .service {
@@ -121,7 +132,7 @@ nav a {
     background-image: linear-gradient(to top, #498686 0%, #3176b9 100%);
     line-height: 30px;
     text-align: center;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     margin-right: 5px;
     width: 30px;
     height: 30px;
@@ -129,92 +140,16 @@ nav a {
     font-weight: 700;
 }
 
-/*============================*/
+.checklist-service02 .image001 {
+    width: 700px;
 
-.gallery {
-    background: #f2f2f2;
 }
 
-.container-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 30px;
+.checklist-service03 .image002 {
+    width: 700px;
+
 }
 
-.img-gallery {
-    width: 30%;
-    display: block;
-    margin-bottom: 15px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
-    cursor: pointer;
-}
-
-/*============================*/
-.image-light {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.534);
-    transform: translate(100%);
-    transition: transform .2s ease-in-out;
-}
-
-.add-image {
-    width: 60%;
-    transform: scale(0);
-    border-radius: 10px;
-    transition: transform .3s .2s;
-}
-
-.showImage {
-    transform: scale(1);
-}
-
-.show {
-    transform: translate(0);
-}
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 40px;
-    cursor: pointer;
-}
-
-/*============================*/
-.experts {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.cont-expert {
-    width: 30%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.cont-expert img {
-    display: block;
-    margin: auto;
-    width: 80%;
-}
-
-.n-expert {
-    width: 100%;
-    display: inline-block;
-    margin-top: 20px;
-    font-weight: 400;
-}
 
 /*=================================================================*/
 footer {
@@ -275,43 +210,7 @@ footer p {
     align-self: center;
 }
 
-/* Container needed to position the overlay. Adjust the width as needed */
-.container001 {
-    position: relative;
-    width: 50%;
-}
 
-/* Make the image to responsive */
-.image001 {
-    width: 100%;
-    height: auto;
-}
-
-/* The overlay effect (full height and width) - lays on top of the container and over the image */
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #7aacbc;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    transform: scale(0);
-    transition: .3s ease;
-}
-
-/* When you mouse over the container, the overlay text will "zoom" in display */
-.container001:hover .overlay {
-    transform: scale(1);
-}
-
-/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
-.text001 {
-    color: red;
-    font-size: 20px;
-
-}
 
 @media screen and (max-width: 800px) {
     #hero, .home-grid {
@@ -355,20 +254,9 @@ footer p {
     }
 
     .service {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
-    .img-gallery {
-        width: 45%;
-    }
-
-    .add-Image {
-        width: 80%;
-    }
-
-    .cont-expert {
-        width: 80%;
-    }
 
     .footer {
         justify-content: center;
@@ -449,62 +337,3 @@ footer p {
     }
 }
 
-@media screen and (max-width: 800px) {
-    #hero, .home-grid {
-        display: block;
-        height: auto;
-    }
-
-    nav, footer {
-        flex-direction: column;
-    }
-
-    nav a {
-        display: block;
-        padding: 15px;
-    }
-
-    #hero {
-        margin-top: 0;
-    }
-
-    #hero-msg {
-        margin-top: 0;
-    }
-
-    #hero-msg h4 {
-        display: none;
-    }
-
-    .home-title {
-        font-size: 25px;
-        color: #6f7364;
-    }
-    #background {
-        display: none;
-    }
-    .subtitle {
-        font-size: 30px;
-    }
-
-    .img-gallery {
-        width: 95%;
-    }
-
-    .add-image {
-        width: 90%;
-    }
-
-    .social-media {
-        width: 100%;
-        justify-content: space-evenly;
-    }
-
-    .social-media-icon {
-        margin-left: 0;
-    }
-
-    footer {
-        margin-top: 25px;
-    }
-}
