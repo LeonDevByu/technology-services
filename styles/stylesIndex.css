@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.home-grid {
+    width: 1600px;
+    margin: 0 auto;
+}
+
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -43,7 +48,6 @@
 .button-box {
     text-align: center;
 }
-
 
 body {
     background-color: #fbfbfc;
@@ -94,10 +98,6 @@ nav a {
     flex-wrap: wrap;
 
 }
-
-/*.container-service img {*/
-/*    width: 40%;*/
-/*}*/
 
 .container001 .image001 {
     width: 80%;
@@ -216,6 +216,13 @@ nav a {
     font-weight: 400;
 }
 
+.text-align-justify{
+    text-align:justify;
+}
+
+h2 {
+    color: #c70909;
+}
 /*=================================================================*/
 footer {
     background-color: #4a4d4c;
