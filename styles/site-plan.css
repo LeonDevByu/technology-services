@@ -17,7 +17,7 @@ Fonts are separated by a | */
 
     /* change the values below to your chosen font(s) */
     --heading-font: "Gloock";
-    --paragraph-font: SemiBold 600, Times, slab-serif;
+    --paragraph-font: 'Open Sans', sans-serif;
 
     /*--heading-font: "IM Fell French Canon SC";*/
     /*--paragraph-font: Lato, Helvetica, sans-serif;*/
